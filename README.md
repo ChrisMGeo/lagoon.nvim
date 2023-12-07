@@ -4,7 +4,7 @@
 
 A Neovim theme inspired from the VSCode theme [antfu/vscode-theme-vitesse](https://github.com/antfu/vscode-theme-vitesse), more specifically the [Black variant](https://github.com/antfu/vscode-theme-vitesse/blob/main/themes/vitesse-black.json).
 
-<!-- <img width="1774" alt="Screen Shot 2022-07-07 at 13 51 44" src="https://user-images.githubusercontent.com/11582667/177871063-15dc3f88-8d2c-4c2f-8a92-65da8baad3e2.png"> -->
+<img width="1774" alt="Screen Shot 2022-07-07 at 13 51 44" src="https://raw.githubusercontent.com/ChrisMGeo/lagoon.nvim/main/.github/images/Main.png">
 
 </div>
 
@@ -70,7 +70,7 @@ This theme was built with `rktjmp/lush.nvim`. For details regarding how to use `
 ## Screenshots
 
 **Coding**
-<!-- <img width="1774" alt="Screen Shot 2022-07-07 at 14 03 54" src="https://user-images.githubusercontent.com/11582667/177871081-7e1e84b5-0456-491e-b3fc-2938eb4a1181.png"> -->
+<img width="1774" alt="Screen Shot 2022-07-07 at 14 03 54" src="https://raw.githubusercontent.com/ChrisMGeo/lagoon.nvim/main/.github/images/CodingExample.png">
 
 <!-- **Fold preview (nvim-ufo)** -->
 <!-- <img width="1864" alt="image" src="https://user-images.githubusercontent.com/11582667/186334727-5cda9c44-9a00-456d-bbef-f488001f8f26.png"> -->
