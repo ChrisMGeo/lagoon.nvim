@@ -1,4 +1,13 @@
+local settings = require "lagoon.settings"
+local opts = settings.opts
+local palette_overrides = opts.palette_overrides or {}
 local palette = require "lagoon.palette"
+
+if type(palette_overrides) == "function" then
+  palette_overrides = palette_overrides(palette)
+end
+
+palette = vim.tbl_deep_extend("force", palette, palette_overrides or {})
 local colors = {
   insert = { bg = palette.lochinvar1, fg = palette.nero2 },
   visual = { bg = palette.contessa, fg = palette.nero3 },
