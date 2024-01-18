@@ -1,17 +1,13 @@
 local M = {}
 
+---@type Config
 local DEFAULT = {
+  palette_overrides = {},
+  highlight_overrides = {},
   transparent = false,
-  styles = {
-    comments = {},
-    keywords = {},
-    functions = {},
-    variables = {},
-    type = { bold = true },
-    lsp = { underline = true },
-  },
 }
 
+---@type Config
 M.opts = {}
 
 function M.set(opts)

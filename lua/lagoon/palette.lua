@@ -1,5 +1,5 @@
 -- main lagoon color palette
----@class LagoonPalette
+---@class Palette
 local palette = {
   none = "NONE",
   black1 = "#000000",

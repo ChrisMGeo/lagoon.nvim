@@ -1,9 +1,9 @@
 local M = {}
 
 --- tree-sitter highlights
---- @param palette LagoonPalette
---- @param opts any
----@return table
+--- @param palette Palette
+--- @param opts Config
+---@return Highlights
 function M.highlight(palette, opts)
   return {
     -- Tree-Sitter syntax groups.

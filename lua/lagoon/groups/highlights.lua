@@ -1,9 +1,9 @@
 local M = {}
 
 --- NeoVim highlights
---- @param palette LagoonPalette
---- @param opts any
----@return table
+--- @param palette Palette
+--- @param opts Config
+---@return Highlights
 function M.highlight(palette, opts)
   return {
     -- The following are the Neovim (as of 0.8.0-dev+100-g371dfb174) highlight
@@ -20,7 +20,7 @@ function M.highlight(palette, opts)
       fg = palette.quillGrey,
       bg = opts.transparent and palette.none or palette.black1,
     }, -- Normal text
-    Comment = vim.tbl_extend("force", { fg = palette.gondola }, opts.styles.comments), -- Any comment
+    Comment = { fg = palette.gondola }, -- Any comment
     --
     -- ColorColumn    { }, -- Columns set with 'colorcolumn'
     Conceal = { fg = palette.ash, bg = palette.black1 }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
@@ -117,11 +117,7 @@ function M.highlight(palette, opts)
     -- Float          { }, --   A floating point constant: 2.3e10
 
     Identifier = { fg = palette.quillGrey }, -- (*) Any variable name
-    Function = vim.tbl_extend(
-      "force",
-      { fg = palette.asparagus },
-      opts.styles.functions
-    ), --   Function name (also: methods for classes)
+    Function = { fg = palette.asparagus }, --   Function name (also: methods for classes)
 
     Statement = { fg = palette.lochinvar1 }, -- (*) Any statement
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
@@ -137,7 +133,7 @@ function M.highlight(palette, opts)
     -- Macro          { }, --   Same as Define
     -- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
 
-    Type = vim.tbl_extend("force", { fg = palette.contessa }, opts.styles.type), -- (*) int, long, char, etc.
+    Type = { fg = palette.contessa }, -- (*) int, long, char, etc.
     -- StorageClass   { }, --   static, register, volatile, etc.
     -- Structure      { }, --   struct, union, enum, etc.
     -- Typedef        { }, --   A typedef
