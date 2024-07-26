@@ -3,7 +3,7 @@
 local palette = {
   none = "NONE",
   black1 = "#000000",
-  black2 = "#050505",
+  black2 = "#0d0d0d",
   black3 = "#0e0e0d",
   quillGrey = "#ccc9bd",
   lochinvar1 = "#4d9375",

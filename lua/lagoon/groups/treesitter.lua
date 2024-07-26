@@ -60,6 +60,7 @@ function M.highlight(palette, opts)
     ["@operator.html"] = { link = "Special" },
     -- sym"@keyword"           { }, -- Keyword
     -- sym"@exception"         { }, -- Exception
+    ["@variable"] = { link = "Identifier" },
     -- sym"@variable"          { }, -- Identifier
     -- sym"@type"              { }, -- Type
     -- sym"@type.definition"   { }, -- Typedef

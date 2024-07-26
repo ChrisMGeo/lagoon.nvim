@@ -45,7 +45,7 @@ function M.highlight(palette, opts)
     -- TermCursor     { }, -- Cursor in a focused terminal
     -- TermCursorNC   { }, -- Cursor in an unfocused terminal
     ErrorMsg = { fg = palette.contessa }, -- Error messages on the command line
-    VertSplit = { fg = palette.black1, bg = palette.black1 }, -- Column separating vertically split windows
+    WinSeparator = { fg = palette.black1, bg = palette.black1 }, -- Column separating vertically split windows
     Folded = { link = "Comment" }, -- Line used for closed folds
     FoldColumn = { link = "Normal" }, -- 'foldcolumn'
     SignColumn = { bg = opts.transparent and palette.none or palette.black1 }, -- Column where |signs| are displayed
@@ -87,8 +87,8 @@ function M.highlight(palette, opts)
     -- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     -- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     -- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-    -- StatusLine     { }, -- Status line of current window
-    -- StatusLineNC   { }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    StatusLine = { bg = palette.black1 }, -- Status line of current window
+    StatusLineNC = { link = "StatusLine" }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     -- TabLine        { }, -- Tab pages line, not active tab page label
     -- TabLineFill    { }, -- Tab pages line, where there are no labels
     -- TabLineSel     { }, -- Tab pages line, active tab page label
@@ -141,6 +141,7 @@ function M.highlight(palette, opts)
     Special = { fg = palette.dimGrey }, -- (*) Any special symbol
     -- SpecialChar    { }, --   Special character in a constant
     Tag = { fg = palette.lochinvar1 }, --   You can use CTRL-] on this
+    Delimiter = { link = "Normal" },
     -- Delimiter      { }, --   Character that needs attention
     -- SpecialComment { }, --   Special things inside a comment (e.g. '\n')
     -- Debug          { }, --   Debugging statements
