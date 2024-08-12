@@ -61,10 +61,12 @@ function M.highlight(palette, opts)
     -- sym"@keyword"           { }, -- Keyword
     -- sym"@exception"         { }, -- Exception
     ["@variable"] = { link = "Identifier" },
+    ["@variable.builtin"] = { link = "@variable" },
     -- sym"@variable"          { }, -- Identifier
     -- sym"@type"              { }, -- Type
     -- sym"@type.definition"   { }, -- Typedef
     ["@type.qualifier"] = { fg = palette.contessa },
+    ["@type.builtin"] = { link = "Type" },
     -- sym"@storageclass"      { }, -- StorageClass
     -- sym"@structure"         { }, -- Structure
     -- sym"@namespace"         { }, -- Identifier
