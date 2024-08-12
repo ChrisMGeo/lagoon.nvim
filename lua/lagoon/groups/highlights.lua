@@ -194,6 +194,7 @@ function M.highlight(palette, opts)
     -- DiagnosticSignInfo         { } , -- Used for "Info" signs in sign column.
     -- DiagnosticSignHint         { } , -- Used for "Hint" signs in sign column.
     -- DiagnosticSignOk           { } , -- Used for "Ok" signs in sign column.
+    LspInlayHint = { fg = palette.gondola, bg = palette.black3 },
   }
 end
 
